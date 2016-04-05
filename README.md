@@ -14,3 +14,7 @@ cd kiosk-helper
 # Install dependencies and run the app
 npm install && npm start
 ```
+
+## License
+
+Code released under the [MIT license](https://github.com/tvthatsme/simple-kiosk/blob/master/LICENSE).
