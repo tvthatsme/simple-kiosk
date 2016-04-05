@@ -8,9 +8,9 @@ To clone and run this repository you'll need [Git](https://git-scm.com) and [Nod
 
 ```bash
 # Clone this repository
-git clone https://github.com/tvthatsme/kiosk-helper
+git clone https://github.com/tvthatsme/simple-kiosk
 # Go into the repository
-cd kiosk-helper
+cd simple-kiosk
 # Install dependencies and run the app
 npm install && npm start
 ```
