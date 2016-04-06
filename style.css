@@ -1,0 +1,77 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  visibility: visible;
+  transition: all 0.5s ease-out;
+}
+
+.hidden {
+  height: 0px;
+}
+
+/* Slide 1 Styling ***********************************************************/
+#slide-1 {
+  /* pastel blue */
+  background-color: #5FA8F3;
+  color: #F3F9FE;
+}
+#slide-1 h2 {
+  background-color: #0277F0;
+}
+
+
+/* Slide 2 Styling ***********************************************************/
+#slide-2 {
+  /* pastel red */
+  background-color: #FF8957;
+  color: #FFF7F3;
+}
+#slide-2 h2 {
+  background-color: #FF5E19;
+}
+
+
+/* Slide 3 Styling ***********************************************************/
+#slide-3 {
+  /* pastel yellow */
+  background-color: #FFBC57;
+  color: #FFFAF3;
+}
+
+#slide-3 h2 {
+  background-color: #FF9900;
+}
+
+
+/* Slide 4 Styling ***********************************************************/
+#slide-4 {
+  /* pastel green */
+  background-color: #54F4B4;
+  color: #012C1B;
+}
+
+#slide-4 h2 {
+  background-color: #00F190;
+}
