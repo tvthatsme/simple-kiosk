@@ -7,26 +7,40 @@
   </head>
   <body>
     <div class="slide" id="slide-1">
-      <h1>Interested in learning more or keeping up with us?</h1>
-      <button id="move-to-slide-2">Let's Connect!</button>
+      <div class="content">
+        <h1>Interested in learning more or keeping up with us?</h1>
+      </div>
+      <div class="navigation">
+        <button id="move-to-slide-2">Let's Connect!</button>
+      </div>
     </div>
     <div class="slide hidden" id="slide-2">
-      <h2>Let's keep in touch!</h2>
-      <input type="text" placeholder="Your name">
-      <input type="email" placeholder="your_email@mail.com">
-      <button id="move-to-slide-3">Continue</button>
+      <div class="content">
+        <h2>Let's keep in touch!</h2>
+        <input type="text" placeholder="Name">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="navigation">
+        <button id="move-to-slide-3">Continue</button>
+      </div>
     </div>
     <div class="slide hidden" id="slide-3">
-      <h2>What are you interested in?</h2>(check any that apply)
-      <input type="checkbox">I'd like to join
-      <input type="checkbox">I might be interested in the future
-      <input type="checkbox">Send me more information
-      <input type="checkbox">Get in touch with my friend
-      <button id="move-to-slide-4">Submit</button>
+      <div class="content">
+        <h2>What are you interested in?</h2>(check any that apply)
+        <input type="checkbox">I'd like to join
+        <input type="checkbox">I might be interested in the future
+        <input type="checkbox">Send me more information
+        <input type="checkbox">Get in touch with my friend
+      </div>
+      <div class="navigation">
+        <button id="move-to-slide-4">Submit</button>
+      </div>
     </div>
     <div class="slide hidden" id="slide-4">
-      <h2>Thanks so much!</h2>
-      We will be in touch with you shortly.
+      <div class="content">
+        <h2>Thanks so much!</h2>
+        We will be in touch with you shortly.
+      </div>
     </div>
     <script>
       require('./renderer.js');
