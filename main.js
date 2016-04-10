@@ -57,3 +57,24 @@ app.on('activate', function () {
     createWindow();
   }
 });
+
+const saveResults = formData => {
+  console.log('save form');
+  console.log(formData);
+  
+  var fs = require('fs');
+  var stream = fs.createWriteStream("entries.txt", {'flags': 'a'});
+  stream.once('open', function(fd) {
+    stream.write(formData.name + "\n");
+    stream.write(formData.email + "\n");
+    
+    for (let i = 0; i < formData.interests.length; i++) {
+      stream.write(formData.interests[0] + "\n");
+    }
+    
+    stream.write("\n----------------------------------------\n\n")
+    stream.end();
+  });
+}
+
+exports.saveResults = saveResults;
