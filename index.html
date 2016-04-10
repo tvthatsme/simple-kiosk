@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <title>Simple Kiosk</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   </head>
   <body>
     <div class="slide" id="slide-1">
       <div class="content">
-        <h1>Interested in learning more or keeping up with us?</h1>
+        <i class="fa fa-comments"></i>
+        <h1>Want to learn more or keep up with us?</h1>
       </div>
       <div class="navigation">
         <button id="move-to-slide-2">Let's Connect!</button>
@@ -16,9 +18,11 @@
     </div>
     <div class="slide hidden" id="slide-2">
       <div class="content">
+        <i class="fa fa-user-plus"></i>
         <h2>Let's keep in touch!</h2>
-        <input type="text" placeholder="Name">
-        <input type="email" placeholder="Email">
+        <br>
+        <input id="addName" type="text" placeholder="Name">
+        <input id="addEmail" type="email" placeholder="Email">
       </div>
       <div class="navigation">
         <button id="move-to-slide-3">Continue</button>
@@ -26,11 +30,31 @@
     </div>
     <div class="slide hidden" id="slide-3">
       <div class="content">
-        <h2>What are you interested in?</h2>(check any that apply)
-        <input type="checkbox">I'd like to join
-        <input type="checkbox">I might be interested in the future
-        <input type="checkbox">Send me more information
-        <input type="checkbox">Get in touch with my friend
+        <i class="fa fa-question-circle"></i>
+        <h2>What are you interested in?</h2>
+        <h4>(check any that apply)</h4>
+        <br>
+        <div class="selection">
+          <input id="addJoin" type="checkbox" />
+          <label for="addJoin">
+            I'd like to join
+          </label>
+          <br>
+          <input id="addInterest" type="checkbox" />
+          <label for="addInterest">
+            I might be interested in the future
+          </label>
+          <br>
+          <input id="addInfo" type="checkbox" />
+          <label for="addInfo">
+            Send me more information
+          </label>
+          <br>
+          <input id="addFriend" type="checkbox" />
+          <label for="addFriend">
+            Get in touch with my friend
+          </label>
+        </div>
       </div>
       <div class="navigation">
         <button id="move-to-slide-4">Submit</button>
@@ -38,6 +62,7 @@
     </div>
     <div class="slide hidden" id="slide-4">
       <div class="content">
+        <i class="fa fa-thumbs-up"></i>
         <h2>Thanks so much!</h2>
         We will be in touch with you shortly.
       </div>
