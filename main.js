@@ -21,9 +21,6 @@ function createWindow () {
 
   // and load the index.html of the app.
   mainWindow.loadURL('file://' + __dirname + '/index.html');
-
-  // Open the DevTools.
-  mainWindow.webContents.openDevTools();
   
   // Don't show a menu bar
   mainWindow.setMenuBarVisibility(false);
@@ -69,7 +66,7 @@ const saveResults = formData => {
     stream.write(formData.email + "\n");
     
     for (let i = 0; i < formData.interests.length; i++) {
-      stream.write(formData.interests[0] + "\n");
+      stream.write(formData.interests[i] + "\n");
     }
     
     stream.write("\n----------------------------------------\n\n")
